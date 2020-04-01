@@ -1,4 +1,4 @@
-<h2>Book detail</h2>
+<h2>detail</h2>
 <div class="col-6 offset-3" *ngIf="book">
   <img [src]="[book.bookPictures[0].src]" class="profile-img-card offset-3"
        style="width: 50%"/>
@@ -24,7 +24,7 @@
       <td>{{book.dateCreate}}</td>
     </tr>
     <tr>
-      <td>Xuất xứ:</td>
+      <td>Ngày sản xuất:</td>
       <td>
         <div *ngFor="let author of book.authors">{{author.name}}</div>
       </td>
@@ -36,7 +36,7 @@
       </td>
     </tr>
     <tr>
-      <td>Ngày sản xuất:</td>
+      <td>Xuất xứ:</td>
       <td>{{book.publishing.name}}</td>
     </tr>
     <tr>

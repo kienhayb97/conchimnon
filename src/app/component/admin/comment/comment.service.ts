@@ -2,6 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {IComment} from './IComment';
+// @ts-ignore
 import {environment} from '../../../../environments/environment';
 
 @Injectable({
