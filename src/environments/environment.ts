@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API_BOOK_STORE: 'https://banana-shortcake-02160.herokuapp.com/api'
+  API_BOOK_STORE: 'https://bookstoresb.herokuapp.com/api'
 };
 
 /*
