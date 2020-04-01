@@ -1,0 +1,107 @@
+
+.modal-backdrop{
+  font-family: sans-serif;
+  background: url("https://photo2.tinhte.vn/data/attachment-files/2018/11/4499454_73_-_2Lconyw.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100%;
+}
+.main-section{
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0;
+}
+.modal-content{
+  background-color: #434e5a;
+  opacity: .8;
+  padding: 0 18px;
+  border-radius: 10px;
+}
+
+.user-img img{
+  height: 90px;
+  width: 90px;
+}
+.user-img{
+  margin-top: -60px;
+  margin-bottom: 10px;
+}
+.form-group{
+  margin-bottom: 25px;
+
+}
+.form-group input{
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding-left: 54px;
+}
+.form-group::before{
+  position: absolute;
+  font-size: 18px;
+  left: 28px;
+  padding-top: 4px;
+  color: #555e60;
+}
+.form-input button{
+  width: 40%;
+  margin: 5px 0 25px;
+}
+.btn-success{
+  background-color: #1c6288;
+  font-size: 18px;
+  border-radius: 5px;
+  /*  padding: 7px 14px;*/
+  border: 1px solid #daf1ff;
+}
+.btn-success:hover{
+  background-color: #13445e;
+  border: 1px solid #daf1ff;
+}
+.forgot{
+  padding: 3px 0;
+  margin-bottom: 0px;
+}
+.forgot a{
+  color: #daf1ff;
+}
+.searchIcon1{
+  position: absolute;
+  top: 12px;
+  left: 23px;
+  font-size: 20px;
+}
+.searchIcon2{
+  position: absolute;
+  top: 75px;
+  left: 23px;
+  font-size: 20px;
+}
+.form-control1{
+  position: relative;
+}
+.searchIcon3{
+  position: absolute;
+  top: 141px;
+  left: 23px;
+  font-size: 20px;
+}
+.searchIcon4{
+  position: absolute;
+  top: 206px;
+  left: 23px;
+  font-size: 20px;
+}
+.searchIcon5{
+  position: absolute;
+  top: 272px;
+  left: 23px;
+  font-size: 20px;
+}
+.searchIcon6{
+  position: absolute;
+  top: 334px;
+  left: 23px;
+  font-size: 20px;
+}

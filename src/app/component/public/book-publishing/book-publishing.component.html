@@ -1,0 +1,23 @@
+<app-cover></app-cover>
+<div id="container">
+  <h3> Danh sách Xuất Xứ</h3>
+  <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h3 class="display-5" *ngIf="publishing">{{publishing.name}}</h3>
+      </div>
+      <hr style="margin-right: 5px">
+      <hr style="margin-left: 5px">
+      <div class="col-12">
+        <div class="container-fluid padding" align="center">
+          <div class="row">
+            <div class="col-md-3" *ngFor="let bookPublishing of bookListByPublishing, index as i">
+              <app-card [book]="bookPublishing"></app-card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="light-100">
+</div>

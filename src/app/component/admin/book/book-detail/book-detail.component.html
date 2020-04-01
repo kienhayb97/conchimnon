@@ -1,0 +1,56 @@
+<h2>Book detail</h2>
+<div class="col-6 offset-3" *ngIf="book">
+  <img [src]="[book.bookPictures[0].src]" class="profile-img-card offset-3"
+       style="width: 50%"/>
+  <table class="table">
+    <tr>
+      <td>Tên Sản Phẩm:</td>
+      <td>{{book.name}}</td>
+    </tr>
+    <tr>
+      <td>Giá:</td>
+      <td>{{book.price | currency: "VND" : "đ "}}</td>
+    </tr>
+    <tr>
+      <td>Giới thiệu:</td>
+      <td>{{book.description}}</td>
+    </tr>
+    <tr>
+      <td>Số lượng:</td>
+      <td>{{book.amount}}</td>
+    </tr>
+    <tr>
+      <td>Days on the shelves:</td>
+      <td>{{book.dateCreate}}</td>
+    </tr>
+    <tr>
+      <td>Xuất xứ:</td>
+      <td>
+        <div *ngFor="let author of book.authors">{{author.name}}</div>
+      </td>
+    </tr>
+    <tr>
+      <td>nhãn hiệu:</td>
+      <td>
+        <div *ngFor="let language of book.languages">{{language.name}}</div>
+      </td>
+    </tr>
+    <tr>
+      <td>Ngày sản xuất:</td>
+      <td>{{book.publishing.name}}</td>
+    </tr>
+    <tr>
+      <td>Thể tích:</td>
+      <td>{{book.category.name}}</td>
+    </tr>
+    <tr>
+      <td>Picture about Produce</td>
+      <td>
+        <div *ngFor="let picture of book.bookPictures, index as i"><img *ngIf="i!=0" src="{{picture.src}}"
+                                                                        width="200px"></div>
+      </td>
+    </tr>
+  </table>
+  <input class="btn btn-primary btn-block" value="danh sách sản phẩm" routerLink="/book-list">
+</div>
+
