@@ -8,7 +8,6 @@ export interface IBook {
   dateCreate: Date;
   description: string;
   amount: number;
-  authors: any[];
   publishing: any;
   category: any;
   languages: any[];

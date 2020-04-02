@@ -12,11 +12,6 @@ import {BookCreateComponent} from '../component/admin/book/book-create/book-crea
 import {BookEditComponent} from '../component/admin/book/book-edit/book-edit.component';
 import {BookDeleteComponent} from '../component/admin/book/book-delete/book-delete.component';
 import {BookDetailComponent} from '../component/admin/book/book-detail/book-detail.component';
-import {AuthorListComponent} from '../component/admin/author/author-list/author-list.component';
-import {AuthorCreateComponent} from '../component/admin/author/author-create/author-create.component';
-import {AuthorEditComponent} from '../component/admin/author/author-edit/author-edit.component';
-import {AuthorDeleteComponent} from '../component/admin/author/author-delete/author-delete.component';
-import {AuthorDetailComponent} from '../component/admin/author/author-detail/author-detail.component';
 import {CategoryListComponent} from '../component/admin/category/category-list/category-list.component';
 import {CategoryCreateComponent} from '../component/admin/category/category-create/category-create.component';
 import {CategoryEditComponent} from '../component/admin/category/category-edit/category-edit.component';
@@ -41,7 +36,6 @@ import {OrderManagerComponent} from '../component/admin/order-manager/order-mana
 import {BookHotComponent} from '../component/public/book-hot/book-hot.component';
 import {BookLanguageComponent} from '../component/public/book-language/book-language.component';
 import {BookPublishingComponent} from '../component/public/book-publishing/book-publishing.component';
-import {BookAuthorComponent} from '../component/public/book-author/book-author.component';
 import {OrderListComponent} from '../user/order-list/order-list.component';
 import {ChangePasswordComponent} from '../user/change-password/change-password.component';
 import {UserAdminGuardService} from '../user/_services/user-admin-guard.service';
@@ -68,11 +62,6 @@ const routes: Routes = [
   {path: 'book-edit/:id', component: BookEditComponent, canActivate: [AdminGuardService]},
   {path: 'book-delete/:id', component: BookDeleteComponent, canActivate: [AdminGuardService]},
   {path: 'book-detail/:id', component: BookDetailComponent, canActivate: [AdminGuardService]},
-  {path: 'author-list', component: AuthorListComponent, canActivate: [AdminGuardService]},
-  {path: 'author-create', component: AuthorCreateComponent, canActivate: [AdminGuardService]},
-  {path: 'author-edit/:id', component: AuthorEditComponent, canActivate: [AdminGuardService]},
-  {path: 'author-delete/:id', component: AuthorDeleteComponent, canActivate: [AdminGuardService]},
-  {path: 'author-detail/:id', component: AuthorDetailComponent, canActivate: [AdminGuardService]},
   {path: 'category-list', component: CategoryListComponent, canActivate: [AdminGuardService]},
   {path: 'category-create', component: CategoryCreateComponent, canActivate: [AdminGuardService]},
   {path: 'category-edit/:id', component: CategoryEditComponent, canActivate: [AdminGuardService]},
@@ -96,7 +85,6 @@ const routes: Routes = [
   {path: 'home', component: HomePageComponent},
   {path: 'cart-list', component: CartListComponent, runGuardsAndResolvers: 'always'},
   {path: 'book-category/:id', component: BookCategoryComponent, runGuardsAndResolvers: 'always'},
-  {path: 'book-author/:id', component: BookAuthorComponent, runGuardsAndResolvers: 'always'},
   {path: 'book-language/:id', component: BookLanguageComponent, runGuardsAndResolvers: 'always'},
   {path: 'book-publishing/:id', component: BookPublishingComponent, runGuardsAndResolvers: 'always'},
   {path: 'book-price/:id', component: BookPriceComponent, runGuardsAndResolvers: 'always'},

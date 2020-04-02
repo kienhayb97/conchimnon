@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {TokenStorageService} from '../../../user/_services/token-storage.service';
 import {CartComponent} from '../cart/cart.component';
-import {AuthorService} from '../../admin/author/author.service';
 import {CategoryService} from '../../admin/category/category.service';
 import {LanguageService} from '../../admin/language/language.service';
 import {PublishingService} from '../../admin/publishing/publishing.service';

@@ -33,9 +33,9 @@ export class BookService {
     return this.http.get<any[]>(this.url + '/language/' + id);
   }
 
-  getBookListByAuthor(id: number): Observable<any[]> {
-    return this.http.get<any[]>(this.url + '/author/' + id);
-  }
+  // getBookListByAuthor(id: number): Observable<any[]> {
+  //   return this.http.get<any[]>(this.url + '/author/' + id);
+  // }
 
   getBookListByDate(): Observable<IBook[]> {
     return this.http.get<IBook[]>(this.url + '/date-create');
@@ -57,7 +57,7 @@ export class BookService {
       description: book.description,
       amount: book.amount,
       bookPictures: book.bookPictures,
-      authors: book.authors,
+      // authors: book.authors,
       publishing: book.publishing,
       category: book.category,
       languages: book.languages,
@@ -71,7 +71,7 @@ export class BookService {
       description: book.description,
       amount: book.amount,
       bookPictures: book.bookPictures,
-      authors: book.authors,
+      // authors: book.authors,
       publishing: book.publishing,
       category: book.category,
       languages: book.languages

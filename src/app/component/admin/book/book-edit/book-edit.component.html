@@ -53,27 +53,27 @@
       </div>
     </div>
 
-    <div class="form-group">
-      <strong>ngày sản xuất</strong>
-      <div *ngFor="let author of authors">
-        <p>{{author.name}}</p>
-      </div>
+<!--    <div class="form-group">-->
+<!--      <strong>ngày sản xuất</strong>-->
+<!--      <div *ngFor="let author of authors">-->
+<!--        <p>{{author.name}}</p>-->
+<!--      </div>-->
 
-      <div class="form-inline">
-        <div style="padding: 0" class="nav-link dropdown-toggle" id="navbarDropdownSearchAuthor" role="button"
-             data-toggle="dropdown"
-             aria-haspopup="true" aria-expanded="false">
-          <input class="form-control" type="search" placeholder="Search Description..." aria-label="Search" #search
-                 (focusout)="search.value=''" (keyup)="searchAuthor($event.currentTarget)">
-        </div>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownSearchAuthor">
-          <div *ngFor="let author of authorList">
-            <a class="dropdown-item" (click)="addAuthor(author.id)">{{author.name}}</a>
-          </div>
-        </div>
-      </div>
+<!--      <div class="form-inline">-->
+<!--        <div style="padding: 0" class="nav-link dropdown-toggle" id="navbarDropdownSearchAuthor" role="button"-->
+<!--             data-toggle="dropdown"-->
+<!--             aria-haspopup="true" aria-expanded="false">-->
+<!--          <input class="form-control" type="search" placeholder="Search Description..." aria-label="Search" #search-->
+<!--                 (focusout)="search.value=''" (keyup)="searchAuthor($event.currentTarget)">-->
+<!--        </div>-->
+<!--        <div class="dropdown-menu" aria-labelledby="navbarDropdownSearchAuthor">-->
+<!--          <div *ngFor="let author of authorList">-->
+<!--            <a class="dropdown-item" (click)="addAuthor(author.id)">{{author.name}}</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
 
-    </div>
+<!--    </div>-->
 
     <div class="form-group">
       <strong>Nhãn hiệu</strong>

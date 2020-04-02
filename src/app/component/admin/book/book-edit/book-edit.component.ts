@@ -3,7 +3,6 @@ import {BookService} from '../book.service';
 import {IBook} from '../IBook';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {ActivatedRoute, Router} from '@angular/router';
-import {AuthorService} from '../../author/author.service';
 import {CategoryService} from '../../category/category.service';
 import {LanguageService} from '../../language/language.service';
 import {PublishingService} from '../../publishing/publishing.service';
@@ -25,8 +24,8 @@ export class BookEditComponent implements OnInit {
   bookForm: FormGroup;
   useFile: any[];
   book: IBook;
-  authorList: any;
-  authors: any;
+  // authorList: any;
+  // authors: any;
   categoryList: any;
   category: ICategory;
   languageList: any;
@@ -39,7 +38,7 @@ export class BookEditComponent implements OnInit {
 
   constructor(
     private bookService: BookService,
-    private authorService: AuthorService,
+    // private authorService: AuthorService,
     private categoryService: CategoryService,
     private languageService: LanguageService,
     private publishingService: PublishingService,
@@ -64,9 +63,9 @@ export class BookEditComponent implements OnInit {
     this.useFile = [];
     this.previewUrl = [];
     this.bookPictures = [];
-    this.authors = [];
+    // this.authors = [];
     this.languages = [];
-    this.authorService.getAuthorList().subscribe(next => this.authorList = next);
+    // this.authorService.getAuthorList().subscribe(next => this.authorList = next);
     this.publishingService.getPublishingList().subscribe(next => this.publishingList = next);
     this.categoryService.getCategoryList().subscribe(next => this.categoryList = next);
     this.languageService.getLanguageList().subscribe(next => this.languageList = next);
@@ -74,7 +73,7 @@ export class BookEditComponent implements OnInit {
     this.bookService.getBook(id).subscribe(
       next => {
         this.bookForm.patchValue(next);
-        this.authors = next.authors;
+        // this.authors = next.authors;
         this.languages = next.languages;
         this.category = next.category;
         this.publishing = next.publishing;
@@ -102,7 +101,7 @@ export class BookEditComponent implements OnInit {
       this.book.bookPictures = this.bookPictures;
       console.log(this.bookPictures);
       console.log(this.book.bookPictures);
-      this.book.authors = this.authors;
+      // this.book.authors = this.authors;
       this.book.languages = this.languages;
       this.book.category = this.category;
       this.book.publishing = this.publishing;
@@ -136,19 +135,19 @@ export class BookEditComponent implements OnInit {
     }
   }
 
-  addAuthor(id) {
-    if (id != null && this.checkAuthor(id) === -1) {
-      this.authorService.getAuthor(id).subscribe(next => this.authors.push(next));
-    }
-  }
-
-  checkAuthor(id) {
-    const checkId = [];
-    for (const a of this.authors) {
-      checkId.push(a.id);
-    }
-    return checkId.indexOf(+id);
-  }
+  // addAuthor(id) {
+  //   if (id != null && this.checkAuthor(id) === -1) {
+  //     this.authorService.getAuthor(id).subscribe(next => this.authors.push(next));
+  //   }
+  // }
+  //
+  // checkAuthor(id) {
+  //   const checkId = [];
+  //   for (const a of this.authors) {
+  //     checkId.push(a.id);
+  //   }
+  //   return checkId.indexOf(+id);
+  // }
 
   addCategory(id) {
     this.category = null;
@@ -174,13 +173,13 @@ export class BookEditComponent implements OnInit {
     return checkId.indexOf(+id);
   }
 
-  searchAuthor(name) {
-    this.authorService.findAllByNameContaining(name.value).subscribe(next => {
-      this.authorList = next;
-    }, error => {
-      console.log(error);
-    });
-  }
+  // searchAuthor(name) {
+  //   this.authorService.findAllByNameContaining(name.value).subscribe(next => {
+  //     this.authorList = next;
+  //   }, error => {
+  //     console.log(error);
+  //   });
+  // }
 
   searchLanguages(name) {
     this.languageService.findAllByNameContaining(name.value).subscribe(next => {

@@ -17,11 +17,6 @@ import {HomeComponent} from './user/home/home.component';
 import {BoardModeratorComponent} from './user/board-moderator/board-moderator.component';
 import {BoardUserComponent} from './user/board-user/board-user.component';
 import { HomePageComponent } from './component/public/home-page/home-page.component';
-import { AuthorListComponent } from './component/admin/author/author-list/author-list.component';
-import { AuthorCreateComponent } from './component/admin/author/author-create/author-create.component';
-import { AuthorEditComponent } from './component/admin/author/author-edit/author-edit.component';
-import { AuthorDeleteComponent } from './component/admin/author/author-delete/author-delete.component';
-import { AuthorDetailComponent } from './component/admin/author/author-detail/author-detail.component';
 import { BookDetailComponent } from './component/admin/book/book-detail/book-detail.component';
 import { CategoryListComponent } from './component/admin/category/category-list/category-list.component';
 import { CategoryCreateComponent } from './component/admin/category/category-create/category-create.component';
@@ -54,7 +49,6 @@ import { CartListComponent } from './component/public/cart-list/cart-list.compon
 import { OrderManagerComponent } from './component/admin/order-manager/order-manager.component';
 import { BookFavoriteComponent } from './component/public/book-favorite/book-favorite.component';
 import { BookLanguageComponent } from './component/public/book-language/book-language.component';
-import { BookAuthorComponent } from './component/public/book-author/book-author.component';
 import { BookPublishingComponent } from './component/public/book-publishing/book-publishing.component';
 import { BookCardComponent } from './component/public/book-card/book-card.component';
 import { OrderListComponent } from './user/order-list/order-list.component';
@@ -87,11 +81,6 @@ import {UserManagerComponent} from './component/admin/user-manager/user-manager.
     BoardModeratorComponent,
     ProfileComponent,
     HomePageComponent,
-    AuthorListComponent,
-    AuthorCreateComponent,
-    AuthorEditComponent,
-    AuthorDeleteComponent,
-    AuthorDetailComponent,
     BookDetailComponent,
     BookDeleteComponent,
     BookEditComponent,
@@ -124,7 +113,6 @@ import {UserManagerComponent} from './component/admin/user-manager/user-manager.
     OrderManagerComponent,
     BookFavoriteComponent,
     BookLanguageComponent,
-    BookAuthorComponent,
     BookPublishingComponent,
     BookCardComponent,
     OrderListComponent,
